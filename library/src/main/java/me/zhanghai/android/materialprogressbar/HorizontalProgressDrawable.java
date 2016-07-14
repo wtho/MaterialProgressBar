@@ -103,6 +103,18 @@ public class HorizontalProgressDrawable extends LayerDrawable
         mProgressDrawable.setTint(tintColor);
     }
 
+	/**
+	 * Specifies the tint color for the secondary drawable. Has to be set after
+	 * calling {@link setTint} as the tint gets also set there.
+	 *
+	 * @param tintColor the new color for the drawable
+	 */
+    @Override
+    public void setSecondaryTint(@ColorInt int tintColor) {
+        mSecondaryProgressDrawable.setTint(tintColor);
+    }
+
+
     /**
      * {@inheritDoc}
      */
